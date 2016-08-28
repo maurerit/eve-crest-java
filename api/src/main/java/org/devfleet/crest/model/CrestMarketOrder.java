@@ -4,7 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-public class CrestMarketOrder extends CrestItem {
+import java.io.Serializable;
+
+public class CrestMarketOrder extends CrestItem implements Serializable {
 
     @JsonProperty("buy")
     private boolean isBuyOrder;

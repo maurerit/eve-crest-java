@@ -2,7 +2,9 @@ package org.devfleet.crest.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CrestItem extends CrestEntity {
+import java.io.Serializable;
+
+public class CrestItem extends CrestEntity implements Serializable {
 
     @JsonProperty
     private String href;
